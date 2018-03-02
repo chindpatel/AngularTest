@@ -1,0 +1,8 @@
+<div class="user-list">
+  Users:
+  <ul>
+    <li *ngFor="let user of users">
+      <a (click)="loadAlbum(user.id)">{{ user.name }}</a>
+    </li>
+  </ul>
+</div>

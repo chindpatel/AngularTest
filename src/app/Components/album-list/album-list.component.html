@@ -1,0 +1,7 @@
+<table class="album-list">
+  <tr *ngFor="let album of albums">
+    <td>{{album.id}}</td>
+    <td>{{album.title}}</td>
+    <td><img (click)="loadPhotos(album.id)" src="{{album.thumbnail}}"></td>
+  </tr>
+</table>
